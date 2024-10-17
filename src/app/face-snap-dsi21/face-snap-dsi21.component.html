@@ -1,0 +1,13 @@
+<div class="face-snap-card" [ngClass]="{ snapped: buttontext === 'oops unsnap!' }">
+    <h2>{{ fs.title }}</h2>
+    <p>Mis en ligne le {{ fs.createdate }}</p>
+    <img [src]="fs.imageurl" [alt]="fs.title"  >
+    <p>{{ fs.description }}</p>
+    <p>
+        <button (click)="onAddSnap()">{{ buttontext }}</button>
+        {{ fs.snaps }}
+    </p>
+</div>
+  
+   
+  
