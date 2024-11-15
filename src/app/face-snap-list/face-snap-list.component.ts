@@ -33,7 +33,6 @@ export class FaceSnapListComponent implements OnInit {
       createdate: new Date(),
       snaps: 0
     }
-  //...
 
   ];
   }

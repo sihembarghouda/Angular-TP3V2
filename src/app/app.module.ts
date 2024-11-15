@@ -7,6 +7,8 @@ import { FaceSnapDSI21Component } from './face-snap-dsi21/face-snap-dsi21.compon
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { HeaderComponent } from './header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -14,12 +16,13 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     FaceSnapDSI21Component,
     FaceSnapListComponent,
-    
+    HeaderComponent,  // HeaderComponent devrait être déclaré ici
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderComponent,
+    MatToolbarModule, 
+    MatIconModule
   ],
   providers: [
     provideClientHydration(),
